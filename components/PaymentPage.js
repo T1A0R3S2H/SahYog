@@ -104,8 +104,10 @@ const PaymentPage = ({ username }) => {
 
             <div className="info flex justify-center items-center my-24 flex-col text-white gap-1">
                 {/* <h1 className="text-white text-2xl font-bold">{formattedUsername}</h1> */}
-                <h1 className="text-white text-2xl font-bold">Hi, I'm {currentUser.name}</h1>
-                {/* <div className='text-slate-300'>Let's help {currentUser.usernam}'s works</div> */}
+                {/* <h1 className="text-white text-2xl font-bold">Hi, Im {currentUser.name}</h1> */}
+                <h1 className="text-white text-2xl font-bold">Hi, I&apos;m {currentUser.name}</h1>
+                
+                {/* <div className='text-slate-300'>Lets help {currentUser.usernam}s works</div> */}
                 <div className='text-slate-300'>
                     {payments.length} Payment(s) received || ₹{payments.reduce((a, b) => a + b.amount, 0)} raised
                 </div>
@@ -117,11 +119,12 @@ const PaymentPage = ({ username }) => {
                             {payments.length == 0 && <li className="mb-2 text-sm sm:text-base font-normal text-gray-500 dark:text-gray-400 whitespace-normal break-words">No Payments Yet!</li>}
                             {payments.map((p, i) => {
                                 return (
-                                    <li key={i} className="mb-2 text-sm sm:text-base font-normal text-gray-500 dark:text-gray-400 whitespace-normal break-words">{p.name} donated <span className='font-bold'>₹{p.amount}</span> and said "{p.message}"</li>
+                                    // <li key={i} className="mb-2 text-sm sm:text-base font-normal text-gray-500 dark:text-gray-400 whitespace-normal break-words">{p.name} donated <span className='font-bold'>₹{p.amount}</span> and said "{p.message}"</li>
+                                    <li key={i} className="mb-2 text-sm sm:text-base font-normal text-gray-500 dark:text-gray-400 whitespace-normal break-words">{p.name} donated <span className='font-bold'>₹{p.amount}</span> and said &quot;{p.message}&quot;</li>
                                 )
                             })}
 
-                            {/* <li className="mb-2 text-sm sm:text-base font-normal text-gray-500 dark:text-gray-400 whitespace-normal break-words">Shubham donated <span className='font-bold'>₹400</span> and said "I support you bro. Lot's of ❤️"</li> */}
+                            {/* <li className="mb-2 text-sm sm:text-base font-normal text-gray-500 dark:text-gray-400 whitespace-normal break-words">Shubham donated <span className='font-bold'>₹400</span> and said I support you bro. Lots of ❤️</li> */}
 
                         </ul>
                     </div>
