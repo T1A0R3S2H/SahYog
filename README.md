@@ -7,6 +7,7 @@
 ## Features ✨
 
 - **Personal User Profiles**: Customizable pages for users to showcase their projects and receive support. 🖼️
+- **GitHub OAuth Authentication**: Secure authentication via GitHub to manage user access. 🔒
 - **UPI Integration**: Effortless UPI payment gateway for quick and secure transactions. 💳
 - **Multiple Contribution Options**: Options for one-time payments, recurring donations, and goal-based funding. 💰
 - **Real-time Notifications**: Instant alerts for users upon receiving new donations. 🔔
@@ -34,6 +35,9 @@ To set up SahaYog, follow these steps:
     ```env
     NEXT_PUBLIC_UPI_INTEGRATION_KEY=your_upi_integration_key
     DATABASE_URL=your_database_url
+    NEXTAUTH_URL=http://localhost:3000
+    GITHUB_CLIENT_ID=your_github_client_id
+    GITHUB_CLIENT_SECRET=your_github_client_secret
     ```
 
 4. **Run the Development Server**:
@@ -46,17 +50,33 @@ To set up SahaYog, follow these steps:
 
 Once the development server is running, you can start using SahaYog:
 
-1. **Sign Up**:
-    - Register an account and set up your profile with details about your projects and funding needs. ✍️
+1. **Sign Up via GitHub**:
+    - Click the "Login with GitHub" button to authenticate using your GitHub account. ✍️
 
-2. **Customize Your Page**:
-    - Personalize your profile page with images, descriptions, and links to your other platforms. 🖌️
+2. **Customize Your Profile**:
+    - After logging in, access the dashboard to personalize your profile page with images, descriptions, and links to your other platforms. Provide your Razorpay ID and secret to receive payments. 🖌️
 
 3. **Share Your Profile**:
     - Share the link to your SahaYog profile with your community to start receiving support. 🌐
 
 4. **Manage Donations**:
     - Use the analytics dashboard to track donations and engage with your supporters. 📈
+
+## Functionality Overview
+
+### Landing Page
+- **Hero Section**: Contains two buttons, "Read More" and "Start Now".
+- **Navbar**: Initially, contains a "Login" button.
+
+### Authentication
+- **GitHub OAuth**: Users log in via GitHub, and upon successful authentication, three buttons appear on the navbar: "Profile", "Dashboard", and "Logout".
+
+### Profile Page
+- **User Profile**: Displays user details, payment options, and a leaderboard of supporters.
+- **Supporter Interaction**: Supporters can visit the profile page, enter their name, a message, and the amount they wish to pay. Payment is processed via Razorpay.
+
+### Dashboard
+- **Customization**: Users can update their name, username, email, cover picture, profile picture, Razorpay ID, and Razorpay secret.
 
 ## Contributing 🤝
 
@@ -92,24 +112,3 @@ We welcome contributions from the community! To contribute to SahaYog, please fo
 ## 
 
 **Made with ❤️ using simple Next.js.**
-
-
-##
-his is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
