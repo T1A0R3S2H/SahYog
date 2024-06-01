@@ -10,7 +10,7 @@
 - **GitHub OAuth Authentication**: Secure authentication via GitHub to manage user access. 🔒
 - **UPI Integration**: Effortless UPI payment gateway for quick and secure transactions. 💳
 - **Multiple Contribution Options**: Options for one-time payments, recurring donations, and goal-based funding. 💰
-- **Real-time Notifications**: Instant alerts for users upon receiving new donations. 🔔
+- **Real-time Notifications**: Instant alerts for users receiving new donations. 🔔
 - **Analytics Dashboard**: Detailed analytics to monitor donations and engagement. 📊
 - **Community Interaction**: Features for donors to leave messages and interact with users. 🗣️
 - **Security and Privacy**: Robust measures to ensure secure transactions and data privacy. 🔒
@@ -69,7 +69,7 @@ Once the development server is running, you can start using SahaYog:
 - **Navbar**: Initially, contains a "Login" button.
 
 ### Authentication
-- **GitHub OAuth**: Users log in via GitHub, and upon successful authentication, three buttons appear on the navbar: "Profile", "Dashboard", and "Logout".
+- **GitHub OAuth**: Users log in via GitHub, and with successful authentication, three buttons appear on the navbar: "Profile", "Dashboard", and "Logout".
 
 ### Profile Page
 - **User Profile**: Displays user details, payment options, and a leaderboard of supporters.
