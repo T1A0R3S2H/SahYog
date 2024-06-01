@@ -6,9 +6,8 @@
 
 ## Features ✨
 
-- **Personal User Profiles**: Customizable pages for users to showcase their projects and receive support. 🖼️
-- **GitHub OAuth Authentication**: Secure authentication via GitHub to manage user access. 🔒
-- **Profile customization**: SahYog allows the creators to customize their profile allowing them to add profile and cover picture.
+- **Personal User Profiles**: Customizable pages for users to showcase their projects and receive support. 
+- **GitHub OAuth Authentication**: Secure authentication via GitHub to manage user access. 
 - **Effortless Transactions**: Razorpay integration allows seamless payments in the SahYog website.
 - **Donation Leaderboard**: Based on the amount which the supporters pay, they are ranked in the profile of individual creators.
 
