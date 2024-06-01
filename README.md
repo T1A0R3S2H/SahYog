@@ -1,19 +1,16 @@
-# SahYog 💸
+# SahYog
 
 ## Overview
 
-**SahaYog** is a Next.js platform that allows individual users to receive financial support directly from their community. With diverse contribution channels, including RazorPay integration, SahYog makes it easy for supporters to donate and for creators to manage their donations.
+**SahaYog** is a Next.js platform that allows individual users to receive financial support directly from their community. With RazorPay integration, SahYog makes it easy for supporters to donate and for creators to manage their donations.
 
 ## Features ✨
 
 - **Personal User Profiles**: Customizable pages for users to showcase their projects and receive support. 🖼️
 - **GitHub OAuth Authentication**: Secure authentication via GitHub to manage user access. 🔒
-- **UPI Integration**: Effortless UPI payment gateway for quick and secure transactions. 💳
-- **Multiple Contribution Options**: Options for one-time payments, recurring donations, and goal-based funding. 💰
-- **Real-time Notifications**: Instant alerts for users receiving new donations. 🔔
-- **Analytics Dashboard**: Detailed analytics to monitor donations and engagement. 📊
-- **Community Interaction**: Features for donors to leave messages and interact with users. 🗣️
-- **Security and Privacy**: Robust measures to ensure secure transactions and data privacy. 🔒
+- **Profile customization**: SahYog allows the creators to customize their profile allowing them to add profile and cover picture.
+- **Effortless Transactions**: Razorpay integration allows seamless payments in the SahYog website.
+- **Donation Leaderboard**: Based on the amount which the supporters pay, they are ranked in the profile of individual creators.
 
 ## Installation 🛠️
 
@@ -48,19 +45,19 @@ To set up SahaYog, follow these steps:
 
 ## Usage 🚀
 
-Once the development server is running, you can start using SahaYog:
+Once the development server is running, you can start using SahYog:
 
 1. **Sign Up via GitHub**:
-    - Click the "Login with GitHub" button to authenticate using your GitHub account. ✍️
+    - Click the "Login" or "Start Now" button to authenticate using your GitHub account. ✍️
 
 2. **Customize Your Profile**:
-    - After logging in, access the dashboard to personalize your profile page with images, descriptions, and links to your other platforms. Provide your Razorpay ID and secret to receive payments. 🖌️
+    - After logging in, access the dashboard to personalize your profile page with name, username, email, profile picture, cover picture, and do not forget to provide your Razorpay ID and SECRET to receive payments. 🖌️
 
 3. **Share Your Profile**:
-    - Share the link to your SahaYog profile with your community to start receiving support. 🌐
+    - Share the link of your SahYog profile with your community to start receiving support. 🌐
 
 4. **Manage Donations**:
-    - Use the analytics dashboard to track donations and engage with your supporters. 📈
+    - Use the profile page to track donations and engage with your supporters. 📈
 
 ## Functionality Overview
 
@@ -80,7 +77,7 @@ Once the development server is running, you can start using SahaYog:
 
 ## Contributing 🤝
 
-We welcome contributions from the community! To contribute to SahaYog, please follow these steps:
+I welcome contributions from the community! To contribute to SahYog, please follow these steps:
 
 1. **Fork the Repository**:
     Click the "Fork" button at the top of the repository page to create your own copy of the repo. 🍴
@@ -111,4 +108,4 @@ We welcome contributions from the community! To contribute to SahaYog, please fo
 
 ## 
 
-**Made with ❤️ using simple Next.js.**
+Made with ❤️ using Next.js.
