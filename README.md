@@ -29,11 +29,10 @@ To set up SahaYog, follow these steps:
 3. **Set Up Environment Variables**:
     Create a `.env.local` file in the root directory and add your environment variables. For example:
     ```env
-    NEXT_PUBLIC_UPI_INTEGRATION_KEY=your_upi_integration_key
-    DATABASE_URL=your_database_url
+    
     NEXTAUTH_URL=http://localhost:3000
     GITHUB_CLIENT_ID=your_github_client_id
-    GITHUB_CLIENT_SECRET=your_github_client_secret
+   GITHUB_CLIENT_SECRET=your_github_client_secret
     ```
 
 4. **Run the Development Server**:
@@ -52,10 +51,7 @@ Once the development server is running, you can start using SahYog:
 2. **Customize Your Profile**:
     - After logging in, access the dashboard to personalize your profile page with name, username, email, profile picture, cover picture, and do not forget to provide your Razorpay ID and SECRET to receive payments. 🖌️
 
-3. **Share Your Profile**:
-    - Share the link of your SahYog profile with your community to start receiving support. 🌐
-
-4. **Manage Donations**:
+3. **Manage Donations**:
     - Use the profile page to track donations and engage with your supporters. 📈
 
 ## Functionality Overview
