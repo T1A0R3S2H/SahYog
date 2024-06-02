@@ -6,7 +6,7 @@ const connectDB = async () => {
     }
 
     try {
-        const conn = await mongoose.connect('mongodb://127.0.0.1:27017/sahyog');
+        const conn = await mongoose.connect('mongodb+srv://tarshswarnkar:3w9413vwk41t7aYC@sahyog.pkxzwkt.mongodb.net/?retryWrites=true&w=majority&appName=sahyog');
         console.log(`MongoDb Connected: ${conn.connection.host}`);
     } catch (error) {
         console.error(`Error: ${error.message}`);
