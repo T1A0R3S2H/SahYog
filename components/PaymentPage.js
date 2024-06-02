@@ -49,36 +49,36 @@ const PaymentPage = ({ username }) => {
 
     // payment
     const pay = async (amount) => {
-    let a = await initiate(amount, username, paymentform);
-    console.log('Order initiation response:', a);  // Log the initiation response
-    let orderId = a.id;
-    console.log('Order ID:', orderId);  // Log the order ID
+        // get the orderId
+        // console.log(username)
+        let a = await initiate(amount, username, paymentform)
+        let orderId = a.id
 
-    var options = {
-        "key": currentUser.razorpayid,
-        "amount": amount,
-        "currency": "INR",
-        "name": "SahYog",
-        "description": "Test Transaction",
-        "image": "https://example.com/your_logo",
-        "order_id": orderId,
-        "callback_url": `${process.env.NEXT_PUBLIC_URL}/api/razorpay`,
-        "prefill": {
-            "name": "Gaurav Kumar",
-            "email": "gaurav.kumar@example.com",
-            "contact": "9000090000"
-        },
-        "notes": {
-            "address": "Razorpay Corporate Office"
-        },
-        "theme": {
-            "color": "#3399cc"
-        }
-    };
-    var rzp1 = new Razorpay(options);
-    rzp1.open();
-};
-
+        var options = {
+            // "key": process.env.NEXT_PUBLIC_KEY_ID,
+            "key": currentUser.razorpayid,
+            "amount": amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+            "currency": "INR",
+            "name": "SahYog", //your business name
+            "description": "Test Transaction",
+            "image": "https://example.com/your_logo",
+            "order_id": orderId, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+            "callback_url": `${process.env.NEXT_PUBLIC_URL}/api/razorpay`,
+            "prefill": { //We recommend using the prefill parameter to auto-fill customer's contact information especially their phone number
+                "name": "Gaurav Kumar", //your customer's name
+                "email": "gaurav.kumar@example.com",
+                "contact": "9000090000" //Provide the customer's phone number for better conversion rates 
+            },
+            "notes": {
+                "address": "Razorpay Corporate Office"
+            },
+            "theme": {
+                "color": "#3399cc"
+            }
+        };
+        var rzp1 = new Razorpay(options);
+        rzp1.open();
+    }
 
 
 
