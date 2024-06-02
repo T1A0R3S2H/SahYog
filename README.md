@@ -6,10 +6,19 @@
 
 ## Features ✨
 
-- **Personal User Profiles**: Customizable pages for users to showcase their projects and receive support. 
-- **GitHub OAuth Authentication**: Secure authentication via GitHub to manage user access. 
-- **Effortless Transactions**: Razorpay integration allows seamless payments in the SahYog website.
+- **Personal User Profiles**: Customizable pages for users to showcase their projects and receive support.
+- **GitHub OAuth Authentication**: Secure authentication via GitHub to manage user access.
+- **Effortless Transactions**: Razorpay integration allows seamless payments on the SahYog website.
 - **Donation Leaderboard**: Based on the amount which the supporters pay, they are ranked in the profile of individual creators.
+
+## Tech Stack 🛠️
+
+- **Framework**: Next.js
+- **Authentication**: NextAuth.js with GitHub OAuth
+- **Payment Processing**: Razorpay
+- **Styling**: Tailwind CSS
+- **Database**: MongoDB (or any other database of your choice)
+- **Deployment**: Vercel (or any other platform of your choice)
 
 ## Installation 🛠️
 
@@ -29,10 +38,9 @@ To set up SahaYog, follow these steps:
 3. **Set Up Environment Variables**:
     Create a `.env.local` file in the root directory and add your environment variables. For example:
     ```env
-    
     NEXTAUTH_URL=http://localhost:3000
     GITHUB_CLIENT_ID=your_github_client_id
-   GITHUB_CLIENT_SECRET=your_github_client_secret
+    GITHUB_CLIENT_SECRET=your_github_client_secret
     ```
 
 4. **Run the Development Server**:
@@ -57,18 +65,16 @@ Once the development server is running, you can start using SahYog:
 ## Functionality Overview
 
 ### Landing Page
-- **Hero Section**: Contains two buttons, "Read More" and "Start Now".
-- **Navbar**: Initially, contains a "Login" button.
+![Landing Page](https://github.com/T1A0R3S2H/SahYog/assets/123285559/746fcd99-5050-4d63-bb0b-feddd8e82e55)
 
 ### Authentication
-- **GitHub OAuth**: Users log in via GitHub, and with successful authentication, three buttons appear on the navbar: "Profile", "Dashboard", and "Logout".
+![Logged In](https://github.com/T1A0R3S2H/SahYog/assets/123285559/2ba02e6f-2857-457e-b195-552821d12f66)
 
 ### Profile Page
-- **User Profile**: Displays user details, payment options, and a leaderboard of supporters.
-- **Supporter Interaction**: Supporters can visit the profile page, enter their name, a message, and the amount they wish to pay. Payment is processed via Razorpay.
+![saha-1](https://github.com/T1A0R3S2H/SahYog/assets/123285559/357c2fd5-0566-461c-bb92-650ae27ac22b)
 
 ### Dashboard
-- **Customization**: Users can update their name, username, email, cover picture, profile picture, Razorpay ID, and Razorpay secret.
+![saha-3](https://github.com/T1A0R3S2H/SahYog/assets/123285559/50a2d595-c680-4d83-8460-a4d40bf9a9b1)
 
 ## Contributing 🤝
 
