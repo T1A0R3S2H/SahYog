@@ -10,21 +10,17 @@ export const POST = async (req) => {
 
         let body = await req.formData();
         body = Object.fromEntries(body);
-
         console.log("Received body:", body);
 
-        // Check if Razorpay order ID is present on the server
         let p = await Payment.findOne({ oid: body.razorpay_order_id });
         if (!p) {
             console.log("Order ID not found:", body.razorpay_order_id);
             return NextResponse.json({ success: false, message: "Order ID not found" });
         }
 
-        // fetch the SECRET of the user who wants to receive the payment
-        let user = await User.findOne({username: p.to_user})
-        const secret = user.razorpaysecret
+        let user = await User.findOne({ username: p.to_user });
+        const secret = user.razorpaysecret;
 
-        // Verify the payment
         let xx = validatePaymentVerification(
             {
                 "order_id": body.razorpay_order_id,
@@ -37,10 +33,9 @@ export const POST = async (req) => {
         console.log("Payment verification result:", xx);
 
         if (xx) {
-            // Update the payment status
             const updatedPayment = await Payment.findOneAndUpdate(
                 { oid: body.razorpay_order_id },
-                { done: "true" },
+                { done: true },  // Use boolean true instead of string "true"
                 { new: true }
             );
 
