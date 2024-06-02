@@ -1,7 +1,7 @@
 {
   "functions": {
     "api/auth/[...nextauth].js": {
-      "maxDuration": 30000
+      "maxDuration": 899
     }
   }
 }
