@@ -16,43 +16,30 @@ const authOptions = {
   callbacks: {
     async signIn({ user, account, profile, email, credentials }) {
       if (account.provider === "github") {
-        try {
-          await connectDB();
+        await connectDB();
 
-          const currentUser = await User.findOne({ email: user.email });
-          if (!currentUser) {
-            const newUser = await User.create({
-              email: user.email,
-              username: user.email.split("@")[0],
-            });
+        const currentUser = await User.findOne({ email: user.email });
+        if (!currentUser) {
+          const newUser = await User.create({
+            email: user.email,
+            username: user.email.split("@")[0],
+          });
 
-            user.name = newUser.username;
-            console.log("New user created:", newUser);
-          } else {
-            console.log("User already exists:", currentUser);
-            user.name = currentUser.username;
-          }
-        } catch (error) {
-          console.error("Error during sign-in:", error);
-          return false;
+          user.name = newUser.username;
+          console.log("New user created:", newUser);
+        } else {
+          console.log("User already exists:", currentUser);
+          user.name = currentUser.username;
         }
       }
       return true;
     },
     async session({ session, token }) {
-      try {
-        await connectDB();
+      await connectDB();
 
-        const dbUser = await User.findOne({ email: session.user.email });
-        if (dbUser) {
-          session.user.name = dbUser.username;
-          console.log("Session user:", dbUser);
-        } else {
-          console.error("User not found for session:", session.user.email);
-        }
-      } catch (error) {
-        console.error("Error during session retrieval:", error);
-      }
+      const dbUser = await User.findOne({ email: session.user.email });
+      session.user.name = dbUser.username;
+      console.log(dbUser)
       return session;
     },
   },
