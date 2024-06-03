@@ -13,7 +13,7 @@ function page() {
           <p className='text-gray-300'>Explain the first step in detail here.</p>
         </section>
         <section className='bg-gray-800 p-6 rounded-lg'>
-          <h2 className='text-2xl text-white mb-2'>Step 2: Setup</h2>
+          <h2 className='text-2xl text-white mb-2'>Step 3: Setup</h2>
           <p className='text-gray-300'>Explain the second step in detail here.</p>
         </section>
         <section className='bg-gray-800 p-6 rounded-lg'>
