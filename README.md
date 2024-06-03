@@ -4,14 +4,14 @@
 
 **SahaYog** is a Next.js platform that allows individual users to receive financial support directly from their community. With RazorPay integration, SahYog makes it easy for supporters to donate and for creators to manage their donations.
 
-## Features ✨
+## Features
 
 - **Personal User Profiles**: Customizable pages for users to showcase their projects and receive support.
 - **GitHub OAuth Authentication**: Secure authentication via GitHub to manage user access.
 - **Effortless Transactions**: Razorpay integration allows seamless payments on the SahYog website.
 - **Donation Leaderboard**: Based on the amount which the supporters pay, they are ranked in the profile of individual creators.
 
-## Tech Stack 🛠️
+## Tech Stack
 
 - **Framework**: Next.js
 - **Authentication**: NextAuth.js with GitHub OAuth
@@ -20,7 +20,7 @@
 - **Database**: MongoDB (or any other database of your choice)
 - **Deployment**: Vercel (or any other platform of your choice)
 
-## Installation 🛠️
+## Installation
 
 To set up SahaYog, follow these steps:
 
@@ -49,7 +49,7 @@ To set up SahaYog, follow these steps:
     ```
     Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Usage 🚀
+## Usage
 
 Once the development server is running, you can start using SahYog:
 
@@ -76,7 +76,7 @@ Once the development server is running, you can start using SahYog:
 ### Dashboard
 ![saha-3](https://github.com/T1A0R3S2H/SahYog/assets/123285559/50a2d595-c680-4d83-8460-a4d40bf9a9b1)
 
-## Contributing 🤝
+## Contributing
 
 I welcome contributions from the community! To contribute to SahYog, please follow these steps:
 
