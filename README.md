@@ -2,7 +2,7 @@
 
 ## Overview
 
-**SahaYog** is a Next.js platform that allows individual users to receive financial support directly from their community. With RazorPay integration, SahYog makes it easy for supporters to donate and for creators to manage their donations.
+**SahaYog** is a Next.js platform that allows developers to receive financial support directly from their community. With RazorPay integration, SahYog makes it easy for supporters to donate and for creators to manage their donations.
 
 ## Features
 
