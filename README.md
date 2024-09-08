@@ -13,7 +13,7 @@
 
 ## Tech Stack
 
-- **Framework**: Next.js
+- **Framework**: Next.js (Full Stack)
 - **Authentication**: NextAuth.js with GitHub OAuth
 - **Payment Processing**: Razorpay
 - **Styling**: Tailwind CSS
